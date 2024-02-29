@@ -8,13 +8,13 @@ import profileReducer from './profileReducer';
 import userReducer from './userReducer';
 
 const rootReducer = {
-  products: productReducer,
-  basket: basketReducer,
-  auth: authReducer,
-  profile: profileReducer,
-  filter: filterReducer,
-  users: userReducer,
-  checkout: checkoutReducer,
+  // products: productReducer,
+  // basket: basketReducer,
+  // auth: authReducer,
+  // profile: profileReducer,
+  // filter: filterReducer,
+  // users: userReducer,
+  // checkout: checkoutReducer,
   app: miscReducer
 };
 

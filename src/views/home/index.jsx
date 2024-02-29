@@ -1,9 +1,12 @@
 import { ArrowRightOutlined } from '@ant-design/icons';
-import { MessageDisplay } from '@/components/common';
-import { ProductShowcaseGrid } from '@/components/product';
+// import { MessageDisplay } from '@/components/common';
+// import { ProductShowcaseGrid } from '@/components/product';
 import { FEATURED_PRODUCTS, RECOMMENDED_PRODUCTS, SHOP } from '@/constants/routes';
 import {
-  useDocumentTitle, useFeaturedProducts, useRecommendedProducts, useScrollTop
+  useDocumentTitle,
+   useFeaturedProducts,
+    useRecommendedProducts,
+     useScrollTop
 } from '@/hooks';
 import bannerImg from '@/images/banner-girl.png';
 import React from 'react';
@@ -54,7 +57,7 @@ const Home = () => {
             <h1>Featured Products</h1>
             <Link to={FEATURED_PRODUCTS}>See All</Link>
           </div>
-          {(errorFeatured && !isLoadingFeatured) ? (
+          {/* {(errorFeatured && !isLoadingFeatured) ? (
             <MessageDisplay
               message={errorFeatured}
               action={fetchFeaturedProducts}
@@ -65,14 +68,14 @@ const Home = () => {
               products={featuredProducts}
               skeletonCount={6}
             />
-          )}
+          )} */}
         </div>
         <div className="display">
           <div className="display-header">
             <h1>Recommended Products</h1>
             <Link to={RECOMMENDED_PRODUCTS}>See All</Link>
           </div>
-          {(errorRecommended && !isLoadingRecommended) ? (
+          {/* {(errorRecommended && !isLoadingRecommended) ? (
             <MessageDisplay
               message={errorRecommended}
               action={fetchRecommendedProducts}
@@ -83,7 +86,7 @@ const Home = () => {
               products={recommendedProducts}
               skeletonCount={6}
             />
-          )}
+          )} */}
         </div>
       </div>
     </main>

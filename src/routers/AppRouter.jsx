@@ -1,13 +1,13 @@
-import { Basket } from '@/components/basket';
-import { Footer, Navigation } from '@/components/common';
+// import { Basket } from '@/components/basket';
+// import { Footer, Navigation } from '@/components/common';
 import * as ROUTES from '@/constants/routes';
 import { createBrowserHistory } from 'history';
 import React from 'react';
 import { Route, Router, Switch } from 'react-router-dom';
 import * as view from '@/views';
-import AdminRoute from './AdminRoute';
-import ClientRoute from './ClientRoute';
-import PublicRoute from './PublicRoute';
+// import AdminRoute from './AdminRoute';
+// import ClientRoute from './ClientRoute';
+// import PublicRoute from './PublicRoute';
 
 // Revert back to history v4.10.0 because
 // v5.0 breaks navigation
@@ -16,20 +16,20 @@ export const history = createBrowserHistory();
 const AppRouter = () => (
   <Router history={history}>
     <>
-      <Navigation />
-      <Basket />
+      {/* <Navigation />
+      <Basket /> */}
       <Switch>
-        <Route
+        {/* <Route
           component={view.Search}
           exact
           path={ROUTES.SEARCH}
-        />
+        /> */}
         <Route
           component={view.Home}
           exact
           path={ROUTES.HOME}
         />
-        <Route
+        {/* <Route
           component={view.Shop}
           exact
           path={ROUTES.SHOP}
@@ -100,9 +100,9 @@ const AppRouter = () => (
           component={view.EditProduct}
           path={`${ROUTES.EDIT_PRODUCT}/:id`}
         />
-        <PublicRoute component={view.PageNotFound} />
+        <PublicRoute component={view.PageNotFound} /> */}
       </Switch>
-      <Footer />
+      {/* <Footer /> */}
     </>
   </Router>
 );

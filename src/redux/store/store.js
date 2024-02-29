@@ -6,7 +6,7 @@ import { persistCombineReducers, persistStore } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import createSagaMiddleware from 'redux-saga';
 import rootReducer from '../reducers';
-import rootSaga from '../sagas/rootSaga';
+// import rootSaga from '../sagas/rootSaga';
 
 const sagaMiddleware = createSagaMiddleware();
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -23,6 +23,6 @@ export default () => {
     composeEnhancer(applyMiddleware(sagaMiddleware))
   );
   const persistor = persistStore(store);
-  sagaMiddleware.run(rootSaga);
+  // sagaMiddleware.run(rootSaga);
   return { store, persistor };
 };
